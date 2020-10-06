@@ -1,0 +1,25 @@
+{
+  "parserOptions": {
+    "ecmaVersion": 2020,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "extends": ["eslint:recommended", "eslint-config-prettier", "plugin:react/recommended"],
+  "rules": {
+    "react/prop-types": 0,
+    "no-unused-vars": 1
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "env": {
+    "browser": true,
+    "node": true,
+    "jest/globals": true
+  },
+  "plugins": ["react", "jest", "jest-dom", "testing-library"]
+}

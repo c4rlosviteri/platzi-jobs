@@ -1,0 +1,43 @@
+.dropdown
+  position relative
+
+  &::before
+  &::after
+    background-color var(--darkgray)
+    bottom 1rem
+    content ""
+    display block
+    height 0.1875rem
+    pointer-events none
+    position absolute
+    right 1rem
+    width 0.625rem
+    z-index 1
+
+  &::before
+    transform rotate(45deg) translateX(-0.25rem)
+
+  &::after
+    transform rotate(-45deg) translateX(0.25rem)
+
+.dropdown__label
+  @extends $label
+  margin-bottom 0.375rem
+
+.dropdown__select
+  -webkit-appearance none
+  appearance none
+  background-color transparent
+  border 1px solid var(--mediumgray)
+  border-radius 0.25rem
+  color inherit
+  height 2.5rem
+  padding-left 1rem
+  padding-right 2rem
+  width 100%
+
+  &[disabled]
+    background-color var(--lightgray)
+
+  &:hover
+    cursor pointer

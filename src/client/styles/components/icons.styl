@@ -1,0 +1,76 @@
+.icon
+  display block
+  position relative
+
+.icon--location
+  border-radius 100% 100% 0 100%
+  border 2px solid
+  box-sizing border-box
+  height 1.125rem
+  margin-top -0.25rem
+  transform rotate(45deg)
+  width 1.125rem
+
+  &::before
+    border-radius 2.5rem
+    border 2px solid
+    box-sizing border-box
+    content ""
+    display block
+    height 0.5rem
+    left 0.2rem
+    position absolute
+    top 0.2rem
+    width 0.5rem
+
+.icon--company
+  border-radius 2px
+  border 2px solid
+  box-sizing border-box
+  height 1rem
+  margin-top 1px
+  width 1.375rem
+
+  &::before
+  &::after
+    box-sizing border-box
+    content ""
+    display block
+    position absolute
+
+  &::before
+    border 2px solid
+    border-bottom 0
+    border-top-left-radius 1px
+    border-top-right-radius 1px
+    height 0.25rem
+    left 0.25rem
+    top -0.3125rem
+    width 0.625rem
+
+  &::after
+    border-left 0.4375rem solid transparent
+    border-right 0.4375rem solid transparent
+    border-bottom 1px solid transparent
+    box-shadow: 0 2px 0, inset 1rem 4.625rem 0
+    height 0.1875rem
+    top 0.25rem
+    width 1.125rem
+
+.icon--date
+  border-radius 0.1875rem
+  border-top 0.25rem solid
+  border 2px solid
+  height 1.125rem
+  width 1.125rem
+
+  &::before
+    background currentColor
+    box-sizing border-box
+    content ""
+    display block
+    height 0.25rem
+    left 0
+    position absolute
+    right 0
+    top 0

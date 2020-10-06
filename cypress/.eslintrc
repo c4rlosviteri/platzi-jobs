@@ -1,0 +1,5 @@
+{
+  "root": true,
+  "plugins": ["kentcdodds", "kentcdodds/import", "eslint-plugin-cypress"],
+  "env": {"cypress/globals": true}
+}

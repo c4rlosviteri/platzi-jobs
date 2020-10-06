@@ -1,0 +1,9 @@
+.cache
+.DS_Store
+yarn-error.log
+node_modules
+dist
+coverage
+cypress/videos
+cypress/screenshots
+src/server/public

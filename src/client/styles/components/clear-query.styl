@@ -1,0 +1,46 @@
+.clear-query
+  display flex
+  justify-content center
+  padding-top 1.5rem
+
+.clear-query__chip
+  align-items center
+  border 0.0675rem solid var(--mediumgray)
+  border-radius 1.5rem
+  display flex
+  font-size 0.75rem
+  font-weight bold
+  height 2.5rem
+  padding-left 0.75rem
+  padding-right 0.5rem
+  text-transform uppercase
+
+.clear-query__button
+  background-color var(--mediumgray)
+  border 0
+  border-radius 0.75rem
+  height 1.5rem
+  margin-left 0.5rem
+  padding 0
+  position relative
+  width 1.5rem
+
+  &:hover
+    background-color var(--pink)
+    cursor pointer
+
+  &::before
+  &::after
+    background-color var(--white)
+    content ""
+    height 2px
+    left 50%
+    position absolute
+    top 50%
+    width 0.75rem
+
+  &::before
+    transform translate(-50%, -50%) rotate(45deg)
+
+  &::after
+    transform translate(-50%, -50%) rotate(-45deg)

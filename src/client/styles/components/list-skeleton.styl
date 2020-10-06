@@ -1,0 +1,27 @@
+.list-skeleton
+  display grid
+  gap 1.25rem
+
+.list-skeleton__card
+  border 1px solid var(--mediumgray)
+  border-radius 0.25rem
+  height 20rem
+  overflow hidden
+  position relative
+
+  &::before
+    animation load 800ms cubic-bezier(0.5, 0.1, 0.2, 1) infinite
+    background linear-gradient(to right, var(--white) 0%, var(--lightgray) 50%, var(--white) 100%)
+    content ""
+    display block
+    height 100%
+    left -10rem
+    position absolute
+    top 0
+    width 10rem
+
+@keyframes load
+  from
+    left -10rem
+  to
+    left 100%
