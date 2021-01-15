@@ -1,6 +1,6 @@
 # Platzi Jobs
 
-Platzi Jobs is a project I made to apply for the Frontend Developer position at Plazi. It gets data from [jobs.github.com](https://jobs.github.com/positions.json).
+Platzi Jobs gets data from [jobs.github.com](https://jobs.github.com/positions.json).
 
 It's an accessible app that lets you search (input or popular search buttons) and filter the returned results.
 
